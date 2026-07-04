@@ -1,0 +1,101 @@
+nav{
+  position: fixed;
+  z-index: 100;
+  width:96vw;
+  background:white;
+  border:5px solid red;
+  border-radius:10px;
+  height:70px;
+  margin:10px;
+  display:flex;
+  justify-content:space-between;
+}
+.logo{
+  display:flex;
+  width:100px;
+  height:56px;
+}
+.about{
+    height:56px;
+    width:50px;
+    padding:5px;
+}
+.centerName{
+
+  background-image: linear-gradient(45deg, #ff7e5f, #feb47b);
+  background-clip: text;
+  -webkit-background-clip: text; 
+  color: transparent;
+  font-size:50px;
+  /* font-family: cursive; */
+  font-weight: bold;
+}
+.logoimg{
+  padding-top:6px;
+  padding-left:5px;
+  object-fit:cover;
+  display:flex;
+  width:50px;
+  height:56px;
+  border-radius:20px;
+}
+body{
+  margin:0;
+  border:5px solid orange;
+  background-color: #071E22;
+}
+section.entry{
+  font-family: cursive;
+  height:20vh;
+  width:97vw;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color:#F4C095;
+  padding:10px;
+}
+#login{
+  border-radius: 20px;
+  border-width: 4px;
+  height:30px;
+  width:500px;
+  font-family: cursive;
+  font-size:20px;
+  padding: 10px;
+  
+}
+.login-button{
+  background-color: #1D7874;
+  border-radius: 20px;
+  border-width: 4px;
+  height:60px;
+  width:150px;
+  font-family: cursive;
+  font-size:25px;
+  font-weight: bold;
+  padding:10px;
+}
+.card1{
+  height: 50vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #679289;
+  width:600px;
+  border-radius: 90px;
+  font-family: cursive;
+  color:#F4C095;
+  font-size:30px;
+  font-weight: bold;
+}
+.hero{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+  min-height: 100vh;
+  color:#F4C095;
+}
