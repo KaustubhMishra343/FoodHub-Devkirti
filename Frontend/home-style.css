@@ -1,0 +1,50 @@
+body{
+    background-image: url("res/backgroundimg-home-2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    min-height:100%;
+}
+.card1{
+    min-height:70vh;
+    min-width: 90%;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap:20px;
+}
+.card2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:300px;
+    width:300px;    
+    background-color:aliceblue;
+    border-radius: 20px;
+}
+.hero{
+    min-width: 100%;
+    height: 100vh;
+}
+@media (max-width:1200px) {
+    .centerName{
+        display: none;
+    }
+}
+@media (max-width:550px) {
+    .navul{
+        display: none;
+    }
+}
+@media (max-width:670px) {
+    .card2{
+    height:285px;
+    width:300px;    
+    }
+}
+@media (min-width:550px) {
+    .ham{display: none;}
+}
