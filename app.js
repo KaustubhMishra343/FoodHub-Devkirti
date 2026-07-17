@@ -77,30 +77,20 @@ const server = http.createServer((req, res) => {
         });
     }
 
-    // ==========================
     // CSS FILES
-    // ==========================
 
     else if(req.url.endsWith(".css")){
-
         fs.readFile(path.join(__dirname,"Frontend",req.url),(err,data)=>{
-
             if(err){
-
                 res.writeHead(404);
                 res.end();
-
                 return;
             }
-
             res.writeHead(200,{
                 "Content-Type":"text/css"
             });
-
             res.end(data);
-
         });
-
     }
 
     // ==========================
