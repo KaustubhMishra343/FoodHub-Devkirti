@@ -3,35 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FOOD BAR-signup</title>
+    <title>FOOD BAR - Signup</title>
     <link rel="stylesheet" href="signup-style.css">
 </head>
 <body>
+
     <header>
         <nav>
             <div>
-                <a href="/Frontend/home.html"><img style="width:70px;height:70px;border-radius: 100%;" src="res/logo-original.jpeg" alt="logo"></a>
+                <a href="/">
+                    <img style="width:70px;height:70px;border-radius:100%;"
+                        src="res/logo-original.jpeg"
+                        alt="logo">
+                </a>
             </div>
-            <div class="centerName" >F O O D B A R</div>
+
+            <div class="centerName">
+                F O O D B A R
+            </div>
+
             <div>
-                <a href="/Frontend/about.html"><img style="width:70px;height: 70px;" src="res/about_us_icon.png" alt="about us"></a>
+                <a href="/about">
+                    <img style="width:70px;height:70px;"
+                        src="res/about_us_icon.png"
+                        alt="about us">
+                </a>
             </div>
         </nav>
     </header>
+
     <section class="hero">
         <section class="card1">
-            <p>S I G N - U P</p> 
-            <!-- <input type="number" placeholder="Phone Number">
-            <button class="send-otp" style="min-height: 5px;letter-spacing:0px;font-size:13px;">send otp</button>
-            <input type="number" style="margin-bottom: 10px;" placeholder="OTP">
-            <input type="submit" value="Verify" style="cursor: pointer;"> -->
-            <input type="text" placeholder="Name">
-            <input type="email" placeholder="Email">
-            <input type="password" placeholder="Password">
-            <input type="submit" value="Verify" style="cursor: pointer;">
-            <p style="font-size: 15px;letter-spacing: normal;">or sign-up using </p>
-            <a href=""><img style="width:25px;" src="res/googleicon.png" alt=""></a>
+
+            <p>S I G N - U P</p>
+
+            <form action="/signup" method="POST">
+
+                <input
+                    type="text"
+                    name="name"
+                    placeholder="Name"
+                    required>
+
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                    required>
+
+                <input
+                    type="password"
+                    name="password"
+                    placeholder="Password"
+                    required>
+
+                <input
+                    type="submit"
+                    value="Verify"
+                    style="cursor:pointer;">
+
+            </form>
+
+            <p style="font-size:15px;letter-spacing:normal;">
+                or sign-up using
+            </p>
+
+            <a href="#">
+                <img
+                    style="width:25px;"
+                    src="res/googleicon.png"
+                    alt="Google">
+            </a>
+
         </section>
     </section>
+
 </body>
 </html>
