@@ -1,38 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FOOD BAR</title>
-  <link rel="stylesheet" href="login-style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOOD BAR-Login</title>
+    <link rel="stylesheet" href="signup-style.css">
 </head>
 <body>
-  <nav>
-    <div class="logo">
-      <a href="/home"><img  class="logoimg"src="res/logo-original.jpeg" alt=""></a>
-    </div>
-    <div class="centerName">F O O D B A R</div>
-    <a  href="/about"><img class="about" src="res/about_us_icon.png" alt="about us"></a>
-  </nav>
-  <section class="hero">
-    <section class="card1"><h1>Login</h1>
-      <section class="entry">
-        </br>
-        <input type="email" name="emailid" id="login" placeholder="email">
-        </br>
-        <input type="password" name="password" id="login" placeholder="password">
-        </br>
-        <button class="login-button">Login</button>
-      </section>
+    <header>
+        <nav>
+            <div>
+                <a href="/Frontend/home.html"><img style="width:70px;height:70px;border-radius: 100%;" src="res/logo-original.jpeg" alt="logo"></a>
+            </div>
+            <div class="centerName" >F O O D B A R</div>
+            <div>
+                <a href="/Frontend/about.html"><img style="width:70px;height: 70px;" src="res/about_us_icon.png" alt="about us"></a>
+            </div>
+        </nav>
+    </header>
+    <section class="hero">
+        <section class="card1">
+            <p>L O G I N</p> 
+            <!-- <input type="number" placeholder="Phone Number">
+            <button class="send-otp" style="min-height: 5px;letter-spacing:0px;font-size:13px;">send otp</button>
+            <input type="number" style="margin-bottom: 10px;" placeholder="OTP">
+            <input type="submit" value="Verify" style="cursor: pointer;"> -->
+            <input type="email" name="email" placeholder="Email">
+            <input type="password" name="password" placeholder="Password">
+            <input type="submit" name="login_button" value="Login" style="cursor: pointer;">
+            <p style="font-size: 15px;letter-spacing: normal;">or login using </p>
+            <a href=""><img style="width:25px;" src="res/googleicon.png" alt=""></a>
+            <p style="font-size: 15px;letter-spacing: normal;">New user ⇒ <a style="color: #2F3542;" href="/Frontend/signup.html">Sign-Up</a> </p>
+        </section>
     </section>
-    <h2>or login using </h2>
-    <a href=""><img style="height: 30px;" src="res/googleicon.png" alt=""></a>
-    <div style="display: flex;gap:10px;">
-      <pre style="font-size:20px">new user--→</pre>
-      <a href="/Frontend/signup.html" style="color:#F4C095;font-family: cursive;font-weight: bold;font-size: 20px;text-decoration: underline;padding-top: 17px;">Sign-up</a>
-    </div>
-    
-  </section>
 </body>
 </html>

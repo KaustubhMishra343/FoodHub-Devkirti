@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOODBAR-profile</title>
+    <link rel="stylesheet" href="signup-style.css">
+    <link rel="stylesheet" href="home-style.css">
+    <link rel="stylesheet" href="about-style.css">
+</head>
+<body style="background-image: url(res/about_us_background.png);background-attachment: fixed;">
+    <header>
+        <nav>
+            <div>
+                <a href="/Frontend/home.html"><img style="width:7vh;height:7vh;border-radius: 100%;margin-right: 5px;" src="res/logo-original.jpeg" alt="logo"></a>
+            </div>
+            <div style="display: flex;"><div style="margin-top:17px;">
+                <img style="width:25px;position:relative;" src="res/search-icon.png" alt="search-icon"></div>
+                <input name="search" type="search" style="width:20vw;">
+            </div>
+            <div class="centerName" >About Us</div>
+             <div class="navul">
+                <ul  style="list-style-type: none;display:flex;gap:clamp(10px,4vw,60px);">
+                    <li><a href="/Frontend/location.html"><img style="width: 40px;" src="res/location-icon.png" alt=""></a></li>
+                    <li><a href="/Frontend/cart.html"><img style="width: 40px;" src="res/cart-icon.png" alt=""></a></li>
+                    <li><a href="/Frontend/about.html"><img style="width:40px;height: 40px;" src="res/about_us_icon.png" alt="about us"></a></li>
+                    <li><a href="/Frontend/profile.html"><img style="width: 40px;" src="res/profile-icon.png" alt=""></a></li>
+                </ul>
+             </div>
+             <div ><button class="ham" style="background:transparent;border:none;margin-right:10px;"><img style="width:7vh;cursor: pointer;" src="res/ham-menu.png" alt="ham-menu"></button></div>
+        </nav>
+    </header>
+    <section style="position: relative;">
+    <div class="ham-menu" style="z-index: 1; background-color: aliceblue;min-height: 100px;min-width:50vw;top:100px;right:50px;position: absolute;visibility:hidden;border-radius: 20px;">
+        <ul  style="list-style-type: none;display:flex;flex-direction:column; gap:clamp(10px,4vw,60px);font-family:Poppins, sans-serif;color: #2F3542;letter-spacing: 5px;font-size: 25px;font-weight: bold;">
+            <li><a style="color: #2F3542;text-decoration: none;" href="/Frontend/location.html"><img style="width: 40px;" src="res/location-icon.png" alt=""><p>Location</p></a></li>
+            <li><a style="color: #2F3542;text-decoration: none;" href="/Frontend/cart.html"><img style="width: 40px;" src="res/cart-icon.png" alt=""><p>Cart</p></a></li>
+            <li><a style="color: #2F3542;text-decoration: none;" href="/Frontend/about.html"><img style="width:40px;height: 40px;" src="res/about_us_icon.png" alt="about us"><p>About Us</p></a></li>
+            <li><a style="color: #2F3542;text-decoration: none;" href="/Frontend/profile.html"><img style="width: 40px;" src="res/profile-icon.png" alt=""><p>Profile</p></a></li>
+        </ul>
+    </div></section>
+    <section style="width: 100vw;display:flex;justify-content: center;align-items: center;flex-direction: row;flex-wrap: wrap;padding-top:100px;">
+        <section class="card1" style="transition: transform 0.5s ease-in-out;">
+            <!-- <h1 style="height:40px;width:100%;display:flex;justify-content: center;">About Us</h1> -->
+            <section class="card2" style="min-height: 300px;flex:0 0 calc(100%/3);max-width:330px;background: transparent;">
+                <div style="width:100%;display: flex;justify-content: flex-end;"><button><img style="width:50px;border-radius: 20px;" src="res/edit_icon.png" alt=""></button></div>
+                <img style="width:250px;border-radius: 20px;" src="res/profile-icon.png" alt="">
+                <p style="font-size: 20px;">Username</p>
+            </section>
+        </section>
+    </section>
+    <section style="width: 100vw;display:flex;justify-content: center;align-items: center;flex-direction: row;flex-wrap: wrap;padding-top:100px;">
+        <section class="card1" style="transition: transform 0.5s ease-in-out;">
+            <section class="card2" style="min-height: 300px;flex:0 0 calc(100%/3);max-width:330px;background: transparent;">
+                <p style="font-size: 20px;">Past Orders</p>
+            </section>
+        </section>
+        <section class="card1" style="transition: transform 0.5s ease-in-out;">
+            <section class="card2" style="min-height: 300px;flex:0 0 calc(100%/3);max-width:330px;background: transparent;">
+                <p style="font-size: 20px;">Frequently Ordered</p>
+            </section>
+        </section>
+    </section>
+    <script src="home-script.js"></script>
+</body>
+</html>
