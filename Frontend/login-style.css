@@ -1,101 +1,235 @@
+/* Background */
+
+body{
+    margin:0;
+    min-height:100vh;
+
+    background-image:url("./res/backgroundimg-signup.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    font-family:"Poppins",sans-serif;
+}
+
+/* Navbar */
+
+header{
+    width:100%;
+    position:absolute;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:100;
+}
+
 nav{
-  position: fixed;
-  z-index: 100;
-  width:96vw;
-  background:white;
-  border:5px solid red;
-  border-radius:10px;
-  height:70px;
-  margin:10px;
-  display:flex;
-  justify-content:space-between;
+
+    height:9vh;
+    width:96vw;
+
+    margin-top:10px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 30px;
+
+    border-radius:60px;
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(12px);
+    -webkit-backdrop-filter:blur(12px);
+
+    border:1px solid rgba(255,255,255,.3);
+
+    box-shadow:
+    0 8px 32px rgba(0,0,0,.2);
 }
-.logo{
-  display:flex;
-  width:100px;
-  height:56px;
-}
-.about{
-    height:56px;
-    width:50px;
-    padding:5px;
-}
+
 .centerName{
 
-  background-image: linear-gradient(45deg, #ff7e5f, #feb47b);
-  background-clip: text;
-  -webkit-background-clip: text; 
-  color: transparent;
-  font-size:50px;
-  /* font-family: cursive; */
-  font-weight: bold;
+    font-size:50px;
+
+    letter-spacing:10px;
+
+    font-weight:bold;
+
+    background:linear-gradient(45deg,#ff007f,#ff8000);
+
+    -webkit-background-clip:text;
+
+    color:transparent;
 }
-.logoimg{
-  padding-top:6px;
-  padding-left:5px;
-  object-fit:cover;
-  display:flex;
-  width:50px;
-  height:56px;
-  border-radius:20px;
-}
-body{
-  margin:0;
-  border:5px solid orange;
-  background-color: #071E22;
-}
-section.entry{
-  font-family: cursive;
-  height:20vh;
-  width:97vw;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  color:#F4C095;
-  padding:10px;
-}
-#login{
-  border-radius: 20px;
-  border-width: 4px;
-  height:30px;
-  width:500px;
-  font-family: cursive;
-  font-size:20px;
-  padding: 10px;
-  
-}
-.login-button{
-  background-color: #1D7874;
-  border-radius: 20px;
-  border-width: 4px;
-  height:60px;
-  width:150px;
-  font-family: cursive;
-  font-size:25px;
-  font-weight: bold;
-  padding:10px;
-}
-.card1{
-  height: 50vh;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: #679289;
-  width:600px;
-  border-radius: 90px;
-  font-family: cursive;
-  color:#F4C095;
-  font-size:30px;
-  font-weight: bold;
-}
+
+/* Hero */
+
 .hero{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  flex-direction: column;
-  min-height: 100vh;
-  color:#F4C095;
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+}
+
+/* Card */
+
+.card1{
+
+    width:420px;
+
+    padding:40px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    background:rgba(255,255,255,.14);
+
+    backdrop-filter:blur(12px);
+
+    -webkit-backdrop-filter:blur(12px);
+
+    border-radius:30px;
+
+    border:1px solid rgba(255,255,255,.3);
+
+    box-shadow:
+
+    0 8px 32px rgba(0,0,0,.2);
+
+    color:#2F3542;
+}
+
+.card1 h1{
+
+    letter-spacing:8px;
+
+    margin-bottom:30px;
+}
+
+/* Form */
+
+form{
+
+    width:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+}
+
+input{
+
+    width:90%;
+
+    padding:14px;
+
+    margin:12px;
+
+    border-radius:25px;
+
+    border:1px solid rgba(0,0,0,.3);
+
+    background:rgba(255,255,255,.15);
+
+    font-size:17px;
+
+    outline:none;
+}
+
+input::placeholder{
+
+    color:#555;
+}
+
+input[type="submit"]{
+
+    width:180px;
+
+    background:#FF5200;
+
+    color:white;
+
+    border:none;
+
+    cursor:pointer;
+
+    font-weight:bold;
+
+    transition:.3s;
+}
+
+input[type="submit"]:hover{
+
+    transform:scale(1.05);
+
+    background:#e64800;
+}
+
+.google{
+
+    width:30px;
+
+    margin-top:10px;
+}
+
+.bottom{
+
+    margin-top:25px;
+
+    font-size:16px;
+
+    letter-spacing:normal;
+}
+
+.bottom a{
+
+    color:#FF5200;
+
+    text-decoration:none;
+
+    font-weight:bold;
+}
+
+.bottom a:hover{
+
+    text-decoration:underline;
+}
+
+/* Responsive */
+
+@media(max-width:700px){
+
+.centerName{
+
+font-size:28px;
+
+letter-spacing:2px;
+
+}
+
+.card1{
+
+width:90%;
+
+padding:30px;
+
+}
+
+nav{
+
+padding:0 15px;
+
+}
+
 }

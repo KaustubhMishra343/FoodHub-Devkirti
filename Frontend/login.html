@@ -4,108 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FOOD BAR - Login</title>
-
     <link rel="stylesheet" href="login-style.css">
 </head>
 
 <body>
 
-<nav>
+    <nav>
 
-    <div class="logo">
-        <a href="/">
-            <img class="logoimg"
-            src="res/logo-original.jpeg"
-            alt="">
-        </a>
-    </div>
+        <div>
+            <a href="/">
+                <img
+                    style="width:70px;height:70px;border-radius:100%;"
+                    src="res/logo-original.jpeg"
+                    alt="logo">
+            </a>
+        </div>
 
-    <div class="centerName">
-        F O O D B A R
-    </div>
+        <div class="centerName">
+            F O O D B A R
+        </div>
 
-    <a href="/about">
-        <img class="about"
-        src="res/about_us_icon.png"
-        alt="about us">
-    </a>
+        <div>
+            <a href="/about">
+                <img
+                    style="width:70px;height:70px;"
+                    src="res/about_us_icon.png"
+                    alt="about us">
+            </a>
+        </div>
 
-</nav>
+    </nav>
 
-<section class="hero">
+    <section class="hero">
 
-<section class="card1">
+        <section class="card1">
 
-<h1>Login</h1>
+            <h1>LOGIN</h1>
 
-<section class="entry">
+            <form action="/login" method="POST" class="entry">
 
-<form action="/login" method="POST">
+                <input
+                    id="login"
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                    required>
 
-<br>
+                <br>
 
-<input
-type="email"
-name="email"
-placeholder="Email"
-required>
+                <input
+                    id="login"
+                    type="password"
+                    name="password"
+                    placeholder="Password"
+                    required>
 
-<br>
+                <br>
 
-<input
-type="password"
-name="password"
-placeholder="Password"
-required>
+                <input
+                    class="login-button"
+                    type="submit"
+                    value="Login">
 
-<br>
+            </form>
 
-<button
-type="submit"
-class="login-button">
+            <p style="font-size:16px;color:#F4C095;">
 
-Login
+                or login using
 
-</button>
+            </p>
 
-</form>
+            <a href="#">
+                <img
+                    style="width:30px;"
+                    src="res/googleicon.png"
+                    alt="google">
+            </a>
 
-</section>
+            <br>
 
-</section>
+            <p style="font-size:18px;color:#F4C095;">
 
-<h2>or login using</h2>
+                New User?
 
-<a href="#">
-<img
-style="height:30px;"
-src="res/googleicon.png"
-alt="">
-</a>
+                <a href="/signup"
+                   style="color:white;font-weight:bold;">
 
-<div style="display:flex;gap:10px;">
+                    Sign-Up
 
-<pre style="font-size:20px">
-new user →
-</pre>
+                </a>
 
-<a
-href="/signup"
-style="
-color:#F4C095;
-font-family:cursive;
-font-weight:bold;
-font-size:20px;
-text-decoration:underline;
-padding-top:17px;">
+            </p>
 
-Sign-up
+        </section>
 
-</a>
-
-</div>
-
-</section>
+    </section>
 
 </body>
 </html>

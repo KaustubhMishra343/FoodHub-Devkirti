@@ -64,7 +64,7 @@ const server = http.createServer((req, res) => {
                     }
                     if(result.length>0){
                         res.writeHead(302,{
-                            Location:"/restaurants"
+                            Location:"/profile"
                         });
                         res.end();
                     }
@@ -309,17 +309,22 @@ const server = http.createServer((req, res) => {
     }
 
     // PROFILE PAGE
-    else if(req.method==="GET" && req.url==="/profile"){
-        fs.readFile(path.join(__dirname,"Frontend/profile.html"),(err,data)=>{
-            if(err){
-                res.writeHead(500,{"Content-Type":"text/plain"});
-                res.end("Profile Page Error");
-                return;
-            }
-            res.writeHead(200,{"Content-Type":"text/html"});
-            res.end(data);
-        });
-    }
+else if(req.method==="GET" && req.url==="/profile"){
+
+    fs.readFile(path.join(__dirname,"Frontend","profile.html"),(err,data)=>{
+
+        if(err){
+            res.writeHead(500,{"Content-Type":"text/plain"});
+            res.end("Profile Page Error");
+            return;
+        }
+
+        res.writeHead(200,{"Content-Type":"text/html"});
+        res.end(data);
+
+    });
+
+}
 
     // LOCATION PAGE
     else if(req.method==="GET" && req.url==="/location"){

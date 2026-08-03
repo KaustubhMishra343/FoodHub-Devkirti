@@ -4,79 +4,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FOOD BAR - Signup</title>
+
     <link rel="stylesheet" href="signup-style.css">
 </head>
+
 <body>
 
-    <header>
-        <nav>
-            <div>
-                <a href="/">
-                    <img style="width:70px;height:70px;border-radius:100%;"
-                        src="res/logo-original.jpeg"
-                        alt="logo">
-                </a>
-            </div>
+<header>
+    <nav>
 
-            <div class="centerName">
-                F O O D B A R
-            </div>
-
-            <div>
-                <a href="/about">
-                    <img style="width:70px;height:70px;"
-                        src="res/about_us_icon.png"
-                        alt="about us">
-                </a>
-            </div>
-        </nav>
-    </header>
-
-    <section class="hero">
-        <section class="card1">
-
-            <p>S I G N - U P</p>
-
-            <form action="/signup" method="POST">
-
-                <input
-                    type="text"
-                    name="name"
-                    placeholder="Name"
-                    required>
-
-                <input
-                    type="email"
-                    name="email"
-                    placeholder="Email"
-                    required>
-
-                <input
-                    type="password"
-                    name="password"
-                    placeholder="Password"
-                    required>
-
-                <input
-                    type="submit"
-                    value="Verify"
-                    style="cursor:pointer;">
-
-            </form>
-
-            <p style="font-size:15px;letter-spacing:normal;">
-                or sign-up using
-            </p>
-
-            <a href="#">
+        <div>
+            <a href="/">
                 <img
-                    style="width:25px;"
-                    src="res/googleicon.png"
-                    alt="Google">
+                    style="width:70px;height:70px;border-radius:100%;"
+                    src="res/logo-original.jpeg"
+                    alt="logo">
             </a>
+        </div>
 
-        </section>
+        <div class="centerName">
+            F O O D B A R
+        </div>
+
+        <div>
+            <a href="/about">
+                <img
+                    style="width:70px;height:70px;"
+                    src="res/about_us_icon.png"
+                    alt="about us">
+            </a>
+        </div>
+
+    </nav>
+</header>
+
+<section class="hero">
+
+    <section class="card1">
+
+        <p>S I G N - U P</p>
+
+        <form action="/signup" method="POST">
+
+            <input
+                type="text"
+                name="name"
+                placeholder="Name"
+                required>
+
+            <input
+                type="email"
+                name="email"
+                placeholder="Email"
+                required>
+
+            <input
+                type="password"
+                name="password"
+                placeholder="Password"
+                required>
+
+            <input
+                type="submit"
+                value="Verify"
+                style="cursor:pointer;">
+
+        </form>
+
+        <p style="font-size:15px;letter-spacing:normal;">
+            or sign-up using
+        </p>
+
+        <a href="#">
+            <img
+                style="width:25px;"
+                src="res/googleicon.png"
+                alt="Google">
+        </a>
+
+        <br><br>
+
+        <p style="font-size:16px;letter-spacing:normal;">
+    Already Signed Up?
+</p>
+
+<button
+    type="button"
+    onclick="window.location.href='/login'"
+    style="
+        margin-top:15px;
+        padding:10px 20px;
+        cursor:pointer;
+        background:#FF5200;
+        color:white;
+        border:none;
+        border-radius:8px;
+        font-weight:bold;">
+
+    Login
+
+</button>
+        </p>
+
     </section>
+
+</section>
 
 </body>
 </html>
